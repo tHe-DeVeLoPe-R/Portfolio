@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7380a073b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> 
+    <div class="container">
+        <nav>
+            <img src="./images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#request">Request project review</a></li>
+                <i class="fas fa-times" onclick = "closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Programmer || Developer</p>
+            <h1>Hi, I'm <span>Saad</span><br> Zafar From Pakistan</h1>
+        </div>
+    </div>
+</div>
+   
+<!-- -------about-------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./images/about.jpg" alt="user image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titel">About Me</h1>
+                <p> I am a Computer Science engineer skilled in Flutter, Node.js,Python, Java, and Databases. My comprehensive skill set enables me to tackle complex software development projects with precision and innovation.</p>
+                <div class="tab-titels">
+                    <p class="tab-links active-link" onClick ="opentab('skills')">Top Skills</p>
+                    <!-- <p class="tab-links" onClick ="opentab('experience')">Experience</p> -->
+                    <p class="tab-links" onClick ="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Flutter (Dart)</span><br>Developing Robust Mobile applications</li>
+                        <li><span>HTML - CSS - JS</span><br>Full Stack Web App development</li>
+                        <li><span>Python</span><br>Performing Data Analysis & Machine Learning tasks.</li>
+                        <li><span>Java</span><br>Developing Desktop & Console Applications </li>
+                    </ul>
+                </div>
+                <!-- <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br> UI/UX Design Training at ET Institute</li>
+                        <li><span>2019 - 2021</span><br> Team Lead at Star App LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Excutive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                    </ul>
+                </div> -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span><br> Pre- Engineering From KIPS college</li>
+                        <li><span>2021</span><br>Python Course  From University of Michigan</li>
+                        <li><span>2023</span><br>BS Computer Science From UET, Taxila </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------services------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-titel">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Proficient in HTML5, CSS3, JavaScript, and Bootstrap in creating responsive and user-friendly web applications. I am capable of integrating front-end and back-end technologies to deliver seamless web solutions.</p>
+                <a href="#contact">Contact me</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Data Analysis</h2>
+                <p>I am proficient in data analysis using Python, scikit-learn, and Jupyter Notebook. My expertise includes analyzing complex datasets, building predictive models, and visualizing data to uncover insights. </p>
+                <a href="#contact">Contact me</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Android App Development</h2>
+                <p>I specialize in Android development using Flutter, and can integrate Api's into Flutter application. With a focus on creating high-performance and scalable mobile applications, I can develop custom designs for my clients.</p>
+                <a href="#contact">Contact me</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- -----------portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titel">My Work</h1>
+        <small> Image used here might not be the original app images, for that you can request review</small> <br>
+        <small style="color: #ff004f;">Click or hover on images to view project details</small>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Al-Ula - Tourism App</h3>
+                    <p>Containing three different modules for Users, Admin, Vendors, this is a web application built using Node.js, HTML, CSS, SQL - for sea trips and activities in Saudia that makes reservations through the application for the day, date, and number of passengers. Through it vendors can upload new events and after approval of admin that events will be visible for the users.
+                    </p>
+                    <a href="#request"><i class="fa-solid fa-up-right-from-square"></i></a> <br>
+                    <p>Request review or buy</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work2.png">
+                <div class="layer">
+                    <h3>Fraud Transaction Detector</h3>
+                    <p>
+                        We have created a fraud transaction prediction model that can predict the nature of the transaction based on the different parameters. Basically, it can be a solution to fake transactions as artificially intelligent model that is trained over millions of data showing records of transactions using Python.
+                    </p>
+                    <a href="#request"><i class="fa-solid fa-up-right-from-square"></i></a> <br>
+                    <p>Request review or buy</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work3.png">
+                <div class="layer">
+                    <h3>Ai Art</h3>
+                    <p>By this android application built in Flutter, now you can generate custom art wallpapers for your mobile screens. Our application will use integrated Api's to generate art for you based on the keywords you will pass.</p>
+                    <a href="#request"><i class="fa-solid fa-up-right-from-square"></i></a> <br>
+                    <p>Request review or buy</p>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/tHe-DeVeLoPe-R/" class="btn">We have many more on GitHub</a>
+    </div>
+</div>
+
+<!-- -------------contact------------ -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titel">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>codewave101@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+92-3265416017</p>
+                <div class="social-icon">
+                     <!-- <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a> -->
+                     <a href="https://www.linkedin.com/in/saad-zafar-12777621a/"><i class="fa-brands fa-linkedin"></i> Visit me at Linkedin</a> 
+                </div>
+                <a href="./images/my-cv.pdf" download class="btn btn2">Downlaod CV</a>
+            </div>
+            <div class="contact-right">
+               <form method="POST" action="mailto: codewave101@gmail.com" 
+               >
+                <input type="text" name="Name" placeholder="Your Name" required>
+                 <input type="Email" name="Email" placeholder="Your Email" required>
+                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                 <button type="submit" class="btn btn2">Direct mail</button>
+                 
+               </form>
+            </div>
+        </div>
+    </div>
+    <!-- Request review  -->
+    
+    <div id="request">
+        <div style="color: #ff004f; text-align: center; padding-left: 10px; padding-right: 10px;">
+            <small>You can request project review to view the original project via google meet or any other platform.</small>
+        </div>
+       
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titel">Request Via</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>codewave101@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+92-3265416017</p>
+                    <div class="social-icon">
+                         <!-- <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a> -->
+                         <a href="https://www.linkedin.com/in/saad-zafar-12777621a/"><i class="fa-brands fa-linkedin"></i> Visit me at Linkedin</a> 
+                    </div>
+                 
+                </div>
+                <div class="contact-right">
+                   <form method="POST" action="mailto: codewave101@gmail.com" 
+                   >
+                    <input type="text" name="Name" placeholder="Project Name" required>
+                     <input type="Email" name="Email" placeholder="Your Email" required>
+                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" class="btn btn2">Direct request</button>
+                     
+                   </form>
+                </div>
+            </div>
+        </div>
+
+    <div class="copyright">
+        <p>Coding is <i class="fa-solid fa-heart"></i> by both passion and profession</p>
+    </div>
+ </div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = '0'
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px'
+    }
+</script>
+
+</body>
+</html>
